@@ -4,7 +4,10 @@ go 1.13
 
 require (
 	github.com/Masterminds/sprig v2.22.0+incompatible
+	github.com/blang/semver v3.5.1+incompatible
 	github.com/openshift/cluster-api v0.0.0-20191129101638-b09907ac6668
+	github.com/openstack-k8s-operators/lib-common v0.0.0-20200506095056-36244492b7a8
+	github.com/operator-framework/operator-lifecycle-manager v0.0.0-20200321030439-57b580e57e88
 	github.com/operator-framework/operator-sdk v0.17.0
 	github.com/pkg/errors v0.9.1
 	github.com/spf13/pflag v1.0.5
