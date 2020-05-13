@@ -1,5 +1,6 @@
-#FROM registry.svc.ci.openshift.org/ocp/builder:golang-1.13 as build-env
-FROM golang:1.13 as build-env
+FROM registry.access.redhat.com/ubi8/ubi-minimal:latest as build-env
+
+RUN microdnf -y install golang
 
 WORKDIR /go/src/github.com/openstack-k8s-operators/compute-node-operator
 ADD . .
